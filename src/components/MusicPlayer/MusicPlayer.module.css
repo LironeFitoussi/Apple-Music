@@ -1,0 +1,39 @@
+.musicPlayer {
+    background-color: #5a5a5a;
+    width: 40vw;
+    height: 100%;
+    border-radius: .25rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.imageContainer img {
+    width: 100%;
+    height: 2.5vh;
+    border-radius: .25rem 0 0 .25rem;
+}
+
+.imageContainer {
+    width: 2.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #353535;
+    border-radius: .25rem 0 0 .25rem;
+}
+
+.trackContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* padding: 0 1rem; */
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+}
+.trackContainer img {
+    width: 2vh;
+    border-radius: .25rem;
+}

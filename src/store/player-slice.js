@@ -5,8 +5,14 @@ const playerSlice = createSlice({
     initialState: {
         isPlaying: false,
         volume: 50,
-        currentTrack: null,
+        currentTrack: {
+            name: 'Times Up',
+            artist: 'Coder Rocket Fuel',
+            url: null,
+            cover: './images/blank-track.svg',
+        },
     },
+
     reducers: {
         togglePlay(state) {
             state.isPlaying = !state.isPlaying;
