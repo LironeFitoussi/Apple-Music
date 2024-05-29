@@ -1,6 +1,6 @@
 .layout {
   display: grid;
-  grid-template-columns: 11vw 1fr;
+  grid-template-columns: 17.5vw 1fr;
   grid-template-rows: auto 1fr auto;
   height: 100vh;
 }
@@ -31,5 +31,5 @@ aside {
   grid-row-end: 4;
   grid-column: 1;
   background-color: #f4f4f4;
-  padding: 1rem;
+  /* padding: 1rem; */
 }

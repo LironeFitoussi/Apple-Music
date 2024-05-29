@@ -1,6 +1,9 @@
 import styles from "./Aside.module.css";
+
+// Import Components
 import AppleMusicLogo from "../../components/SVG/apple-music-logo";
 import SearchBar from "../../components/SearchBar/SearchBar";
+import OpenApp from "../../components/OpenApp/OpenApp";
 
 import { Link } from "react-router-dom";
 
@@ -8,8 +11,8 @@ const Aside = () => {
   return (
     <aside className={styles.aside}>
       <div>
-        <AppleMusicLogo />
         <div className={styles.asideContent}>
+          <AppleMusicLogo />
           <SearchBar />
           <nav>
             <ul className={styles.menuList}>
@@ -36,7 +39,7 @@ const Aside = () => {
         </div>
       </div>
       <div>
-        
+        <OpenApp />
       </div>
     </aside>
   );

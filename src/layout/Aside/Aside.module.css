@@ -1,7 +1,13 @@
 .aside {
     border-right: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
+.asideContent {
+    padding: 1rem;
+}
 .menuList {
     padding: 0;
     margin: 0;
