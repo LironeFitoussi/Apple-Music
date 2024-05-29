@@ -1,8 +1,8 @@
 import styles from "./Header.module.css";
 
-import PlayerButtons from "../PlayerButtons/PlayerButtons";
-import MusicPlayer from "../MusicPlayer/MusicPlayer";
-import PlayerVolume from "../PlayerVolume/PlayerVolume";
+import PlayerButtons from "../../components/PlayerButtons/PlayerButtons";
+import MusicPlayer from "../../components/MusicPlayer/MusicPlayer";
+import PlayerVolume from "../../components/PlayerVolume/PlayerVolume";
 
 const Header = () => {
   return (

@@ -12,3 +12,23 @@ body {
 .blank-icon {
     opacity: .1;
 }
+
+/* Remove anchor tag styling */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Remove list styling */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Remove button styling */
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}

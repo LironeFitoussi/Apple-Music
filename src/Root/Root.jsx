@@ -1,12 +1,13 @@
 import './Root.css';
 
-import Header from '../components/Header/Header.jsx';
+import Header from '../layout/Header/Header.jsx';
+import Aside from '../layout/Aside/Aside.jsx';
 
 const Root = () => {
   return (
     <div className="layout">
       <Header />
-      <aside>sdf</aside>
+      <Aside />
       <main>sdg</main>
     </div>
   );
