@@ -12,7 +12,7 @@ const MusicPlayer = () => {
         />
       </audio>
       <div className={styles.imageContainer}>
-        <img src={currentTrack.cover} alt="" />
+        <img className="blank-icon" src={currentTrack.cover} alt="" />
       </div>
       <div className={styles.trackContainer}>
         {currentTrack.url === null ? (

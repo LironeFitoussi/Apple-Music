@@ -1,16 +1,10 @@
 .musicPlayer {
-    background-color: #5a5a5a;
     width: 35vw;
     height: 100%;
     border-radius: .25rem;
     display: flex;
     flex-direction: row;
-}
-
-.imageContainer img {
-    width: 100%;
-    height: 2.5vh;
-    border-radius: .25rem 0 0 .25rem;
+    border: 1px solid #cccccc80;
 }
 
 .imageContainer {
@@ -18,7 +12,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #353535;
+    background-color: #3535351e;
+    border-radius: .25rem 0 0 .25rem;
+    border: 1px solid #cccccc80;
+}
+
+.imageContainer img {
+    width: 100%;
+    height: 2.5vh;
     border-radius: .25rem 0 0 .25rem;
 }
 
