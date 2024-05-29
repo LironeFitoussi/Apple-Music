@@ -2,7 +2,6 @@ import styles from "./MusicPlayer.module.css";
 import { useSelector } from "react-redux";
 const MusicPlayer = () => {
   const { currentTrack } = useSelector((state) => state.player);
-  console.log(currentTrack.cover);
 
   return (
     <div className={styles.musicPlayer}>

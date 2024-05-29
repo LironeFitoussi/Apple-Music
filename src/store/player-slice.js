@@ -4,7 +4,7 @@ const playerSlice = createSlice({
     name: 'player',
     initialState: {
         isPlaying: false,
-        volume: 50,
+        volume: 79,
         currentTrack: {
             name: 'Times Up',
             artist: 'Coder Rocket Fuel',

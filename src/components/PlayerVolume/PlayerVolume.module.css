@@ -1,0 +1,7 @@
+.playerVolume input[type="range"]::-webkit-slider-thumb {
+    background: #323232;
+  }
+  
+  input[type="range"]::-moz-range-thumb {
+    background: #323232;
+  }
