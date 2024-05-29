@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'FS Pro';
+    src: url('../src/fonts/San-Francisco-Pro-Fonts-master/SF-Pro.ttf') format('truetype');
+}
+
+body {
+    font-family: 'FS Pro', sans-serif;
+    padding: 0;
+    margin: 0;
+}

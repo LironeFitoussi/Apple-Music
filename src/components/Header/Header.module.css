@@ -1,0 +1,11 @@
+.header h1 {
+    /* background-color: aqua; */
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
