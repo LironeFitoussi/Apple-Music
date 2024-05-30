@@ -1,10 +1,11 @@
 import styles from "./TopShelf.module.css";
 
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import VerBoxPlaylist from "../VerBoxPlaylist/VerBoxPlaylist";
 import { MdArrowForwardIos, MdArrowBackIosNew } from "react-icons/md";
 
 const TopShelf = () => {
+  const [hover, setHover] = useState(false);
   const containerRef = useRef(null);
   const handleNextClick = () => {
     containerRef.current.scrollBy({
@@ -20,10 +21,24 @@ const TopShelf = () => {
     });
   };
 
+  const handleMouseEnter = () => {
+    setHover(true);
+  };
+
+  const handleMouseLeave = () => {
+    setHover(false);
+  };
   return (
-    <div className={styles.container}>
-      <button className={styles.prevButton} onClick={handlePrevClick}>
-        <MdArrowBackIosNew />
+    <div
+      className={styles.container}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+    >
+      <button
+        className={`${styles.prevButton} ${!hover ? styles.hidden : ""}`}
+        onClick={handlePrevClick}
+      >
+        <img src="./images/paddle-left.svg" alt="" />
       </button>
       <div className={styles.carousel} ref={containerRef}>
         <div className={styles.slideContianer}>
@@ -134,8 +149,11 @@ const TopShelf = () => {
           </div>
         </div>
       </div>
-      <button className={styles.nextButton} onClick={handleNextClick}>
-        <MdArrowForwardIos />
+      <button
+        className={`${styles.nextButton} ${!hover ? styles.hidden : ""}`}
+        onClick={handleNextClick}
+      >
+        <img src="./images/paddle-left.svg" alt="" />
       </button>
     </div>
   );
