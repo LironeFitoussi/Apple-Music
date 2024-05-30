@@ -3,7 +3,7 @@ const AppleMusicLogo = () => (
     display: "flex",
     // justifyContent: "center",
     alignItems: "center",
-    marginBottom: "1.5rem",
+    marginBottom: "2rem",
   }}>
     <svg
       height="20"

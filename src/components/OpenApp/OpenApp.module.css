@@ -2,7 +2,7 @@
     border-top: 1px solid #ccc;
     padding: 1rem 2rem;
     display: flex;
-    gap: 0.8vw;
+    gap: 10px;
     justify-content: flex-start;
     align-items: center;
 }

@@ -11,6 +11,8 @@ const playerSlice = createSlice({
             url: null,
             cover: './images/blank-track.svg',
         },
+        isShuffle: false,
+        repeatTimes: 0,
     },
 
     reducers: {
@@ -22,7 +24,13 @@ const playerSlice = createSlice({
         },
         currentTrack(state, action) {
             state.currentTrack = action.payload;
-        }
+        },
+        isShuffle(state) {
+            state.isShuffle = !state.isShuffle;
+        },
+        repeatTimes(state) {
+            state.repeatTimes = (state.repeatTimes + 1) % 3;
+        },
     },
 });
 

@@ -1,6 +1,6 @@
 .layout {
   display: grid;
-  grid-template-columns: 17.5vw 1fr;
+  grid-template-columns: 265px 1fr;
   grid-template-rows: auto 1fr auto;
   height: 100vh;
 }
@@ -23,12 +23,12 @@ header {
 main {
   grid-row: 2;
   grid-column: 2;
+  height: 95vh;
 }
 
 aside {
   grid-row-start: 1;
   grid-row-end: 4;
   grid-column: 1;
-  background-color: #f4f4f4;
-  /* padding: 1rem; */
+  background-color: #F9F9F9;
 }
