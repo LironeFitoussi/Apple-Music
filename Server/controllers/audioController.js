@@ -1,6 +1,6 @@
-import multer, { memoryStorage } from 'multer';
-import { v2 as cloudinary } from 'cloudinary';
-import { query } from '../db';
+const multer = require('multer');
+const cloudinary = require('cloudinary').v2;
+const pool = require('../db');
 require('dotenv').config();
 
 cloudinary.config({
@@ -9,7 +9,7 @@ cloudinary.config({
   api_secret: process.env.CLOUDINARY_API_SECRET,
 });
 
-const storage = memoryStorage();
+const storage = multer.memoryStorage();
 const upload = multer({ storage: storage });
 
 const uploadAudio = async (req, res) => {
@@ -26,7 +26,7 @@ const uploadAudio = async (req, res) => {
 
         const audioUrl = result.secure_url;
 
-        query(
+        pool.query(
           'INSERT INTO audios (title, artist_id, album_id, playlist_id, url) VALUES ($1, $2, $3, $4, $5) RETURNING *',
           [title, artistId, albumId, playlistId, audioUrl],
           (err, dbRes) => {
@@ -48,14 +48,14 @@ const uploadAudio = async (req, res) => {
 
 const getAllAudios = async (req, res) => {
   try {
-    const result = await query('SELECT * FROM audios');
+    const result = await pool.query('SELECT * FROM audios');
     res.status(200).json(result.rows);
   } catch (err) {
     res.status(500).send(err);
   }
 };
 
-export default {
+module.exports = {
   upload,
   uploadAudio,
   getAllAudios

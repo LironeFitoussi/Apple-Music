@@ -1,8 +1,8 @@
-import { Router } from 'express';
-import { upload, uploadAudio, getAllAudios } from '../controllers/audioController';
-const router = Router();
+const express = require('express');
+const { upload, uploadAudio, getAllAudios } = require('../controllers/audioController');
+const router = express.Router();
 
 router.post('/upload', upload.single('audio'), uploadAudio);
 router.get('/', getAllAudios);
 
-export default router;
+module.exports = router;

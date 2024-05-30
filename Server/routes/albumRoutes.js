@@ -1,7 +1,7 @@
-import { Router } from 'express';
-import { addAlbum } from '../controllers/albumController';
-const router = Router();
+const express = require('express');
+const { addAlbum } = require('../controllers/albumController');
+const router = express.Router();
 
 router.post('/', addAlbum);
 
-export default router;
+module.exports = router;

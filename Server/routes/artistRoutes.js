@@ -1,7 +1,8 @@
-import { Router } from 'express';
-import { addArtist } from '../controllers/artistController';
-const router = Router();
+const express = require('express');
+const { addArtist, getArtists } = require('../controllers/artistController');
+const router = express.Router();
 
 router.post('/', addArtist);
+router.get('/', getArtists)
 
-export default router;
+module.exports = router;

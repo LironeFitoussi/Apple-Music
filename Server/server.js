@@ -1,17 +1,17 @@
-import express, { json } from 'express';
-import pool from './db';
+const express = require('express');
+const pool = require('./db');
 require('dotenv').config();
 
 const app = express();
 const port = 3000;
 
-app.use(json());
+app.use(express.json());
 
 // Importer les routes
-import artistRoutes from './routes/artistRoutes';
-import albumRoutes from './routes/albumRoutes';
-import playlistRoutes from './routes/playlistRoutes';
-import audioRoutes from './routes/audioRoutes';
+const artistRoutes = require('./routes/artistRoutes');
+const albumRoutes = require('./routes/albumRoutes');
+const playlistRoutes = require('./routes/playlistRoutes');
+const audioRoutes = require('./routes/audioRoutes');
 
 // Utiliser les routes
 app.use('/artists', artistRoutes);

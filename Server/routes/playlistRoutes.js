@@ -1,7 +1,7 @@
-import { Router } from 'express';
-import { addPlaylist } from '../controllers/playlistController';
-const router = Router();
+const express = require('express');
+const { addPlaylist } = require('../controllers/playlistController');
+const router = express.Router();
 
 router.post('/', addPlaylist);
 
-export default router;
+module.exports = router;
