@@ -1,13 +1,26 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
 .carousel {
     display: flex;
     flex-direction: row;
-    overflow-x: scroll;
-    width: 77vw;
-    gap: 1vw;
+    overflow-x: hidden;
+    width: 81vw;
+    /* gap: 1vw; */
 }
 
 .topShelf {
     display: flex;
     margin-top: 20px;
     gap: 1vw;
+    margin: 0 0.5vw;
+}
+
+.slideContianer {
+    display: flex;
+    /* gap: 1vw; */
 }
