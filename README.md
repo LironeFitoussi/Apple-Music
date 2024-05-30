@@ -1,7 +1,7 @@
 # Apple Music Clone (PERN Stack)
 
 <p align="center">
-  <img src="https://example.com/logo.png" alt="Apple Music Clone Logo" width="200">
+  <img src="./logo.jpg" alt="Apple Music Clone Logo" width="200">
 </p>
 
 <p align="center">
