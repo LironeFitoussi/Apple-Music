@@ -1,0 +1,39 @@
+.joinBanner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 25px;
+    background-color: #D60017;
+    color: white;
+    width: calc(100vw - 50px);
+    height: 45px;
+}
+
+.joinBanner button {
+    font-family: 'FS Pro';
+    background-color: white;
+    color: black;
+    padding: 7px 25px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.joinBanner section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.joinBanner section h2 {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.joinBanner section p {
+    margin: 0;
+    font-size: 0.8rem;
+    color: rgb(241, 241, 241);
+}

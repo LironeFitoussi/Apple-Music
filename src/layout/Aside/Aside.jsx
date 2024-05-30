@@ -4,6 +4,7 @@ import styles from "./Aside.module.css";
 import AppleMusicLogo from "../../components/SVG/apple-music-logo";
 import SearchBar from "../../components/SearchBar/SearchBar";
 import OpenApp from "../../components/OpenApp/OpenApp";
+import JoinBanner from "../../components/JoinBanner/JoinBanner";
 
 import { Link, useLocation } from "react-router-dom";
 
@@ -41,8 +42,13 @@ const Aside = () => {
         </nav>
         </div>
       </div>
-      <div>
+      <div style={{
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "space-between",
+      }}>
         <OpenApp />
+        <JoinBanner />
       </div>
     </aside>
   );
