@@ -2,7 +2,7 @@ import styles from "./Browse.module.css";
 
 import TopShelf from "../../components/TopShelf/TopShelf";
 import BestAlbumsShelf from "../../components/BestAlbumsShelf/BestAlbumsShelf";
-
+import TrendingSongs from "../../components/TrendingSongs/TrendingSongs";
 const Browse = () => {
   return (
     <div className={styles.container}>
@@ -19,6 +19,7 @@ const Browse = () => {
       </div>
       <TopShelf />
       <BestAlbumsShelf />
+      <TrendingSongs />
     </div>
   );
 };
