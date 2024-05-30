@@ -1,0 +1,42 @@
+.verBoxPlaylist {
+    width: 25vw;
+}
+
+.header {
+    height: 100px;
+}
+
+.header span {
+    font-size: 0.75rem;
+    color: rgb(102, 102, 102);
+    margin: 0;
+}
+
+.header h3 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.imgContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.verBoxPlaylist img {
+    width: 100%;
+    border-radius: 15px;
+    object-fit: fill;
+}
+
+
+.imgContainer p {
+    position: absolute;
+    bottom: 0px;
+    margin: 0;
+    color: white;
+    margin: 1rem;
+    font-size: 0.9rem;
+}

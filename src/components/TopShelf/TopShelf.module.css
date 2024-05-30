@@ -1,4 +1,13 @@
+.carousel {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    width: 77vw;
+    gap: 1vw;
+}
+
 .topShelf {
     display: flex;
     margin-top: 20px;
+    gap: 1vw;
 }
