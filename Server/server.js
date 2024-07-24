@@ -1,12 +1,14 @@
 const express = require('express');
 const pool = require('./db');
+const bodyParser = require('body-parser');
+
 require('dotenv').config();
 
 const app = express();
 const port = 3000;
 
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.json());
-
 // Importer les routes
 const artistRoutes = require('./routes/artistRoutes');
 const albumRoutes = require('./routes/albumRoutes');
